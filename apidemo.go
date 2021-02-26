@@ -7,3 +7,8 @@ const (
 	B
 	C
 )
+
+type Geometry interface {
+	Area() float64
+	Perim(x, y int) float64
+}
