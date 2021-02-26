@@ -21,3 +21,10 @@ var (
 	ErrBufferFull        = errors.New("bufio: buffer full")
 	ErrNegativeCount     = errors.New("bufio: negative count")
 )
+
+type Name struct {
+	Country, Organization, OrganizationalUnit []string
+	Locality, Province                        []string
+	StreetAddress, PostalCode                 []string
+	SerialNumber, CommonName                  string
+}
