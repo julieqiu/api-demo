@@ -1,6 +1,9 @@
 package apidemo
 
-import "errors"
+import (
+	"errors"
+	"fmt"
+)
 
 type Field int
 
@@ -27,4 +30,20 @@ type Name struct {
 	Locality, Province                        []string
 	StreetAddress, PostalCode                 []string
 	SerialNumber, CommonName                  string
+}
+
+func foo() {
+	fmt.Println("hi")
+}
+
+func Foo() {
+	fmt.Println("hi2")
+}
+
+func FoO() {
+	fmt.Println("hi3")
+}
+
+func FOO() {
+	fmt.Println("hi4")
 }
